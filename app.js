@@ -37,26 +37,27 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Cors
-const whiteList = [
-  "undefined",
-  "http://localhost:3000",
-  "http://127.0.0.1:3000",
-  "https://wow-gym.herokuapp.com/",
-  "https://wow-gym-1874c.web.app",
-  "https://wow-gym-1874c.firebaseapp.com",
-];
-const corsOptions = {
-  credentials: true,
-  origin: (origin, cb) => {
-    // console.log(origin);
-    if (whiteList.indexOf(origin) >= 0) {
-      cb(null, true);
-    } else {
-      cb(null, false);
-    }
-  },
-};
-app.use(cors(corsOptions));
+// const whiteList = [
+//   "undefined",
+//   "http://localhost:3000",
+//   "http://127.0.0.1:3000",
+//   "https://wow-gym.herokuapp.com/",
+//   "https://wow-gym-1874c.web.app",
+//   "https://wow-gym-1874c.firebaseapp.com",
+// ];
+// const corsOptions = {
+//   credentials: true,
+//   origin: (origin, cb) => {
+//     // console.log(origin);
+//     if (whiteList.indexOf(origin) >= 0) {
+//       cb(null, true);
+//     } else {
+//       cb(null, false);
+//     }
+//   },
+// };
+// app.use(cors(corsOptions));
+app.use(cors());
 
 // Router
 app.use("/api/shop", shopRoutes);
