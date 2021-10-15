@@ -84,7 +84,8 @@ app.use((error, req, res, next) => {
     .status(error.code || 500)
     .json({ message: error.message || "unKnown Error!" });
 });
-
-app.listen(process.env.PORT || 5000, () => console.log("server start 🥶"));
+const ports = process.env.PORT || 5000
+console.log("ports",ports)
+app.listen(ports, () => console.log("server start 🥶"));
 
 // ---------

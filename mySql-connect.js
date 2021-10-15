@@ -13,12 +13,9 @@ const mysql = require("mysql2");
 
 const pool = mysql.createPool({
   host: "us-cdbr-east-04.cleardb.com",
-  user: "b42f4a7274b8ff",
-  password: "3c3c37ed",
-  database: "heroku_28e16c61fcb839f",
+  user: "badcdb842abde8",
+  password: "01a497f1",
+  database: "heroku_1557f20cd104a50",
 });
 
 module.exports = pool.promise();
-
-
-
