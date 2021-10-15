@@ -40,7 +40,7 @@ const whiteList = [
   "undefined",
   "http://localhost:3000",
   "http://127.0.0.1:3000",
-  "https://gym-project-backend.herokuapp.com",
+  "https://wow-gym.herokuapp.com/",
   "https://wow-gym-1874c.web.app",
   "https://wow-gym-1874c.firebaseapp.com",
 ];
