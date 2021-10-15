@@ -1,5 +1,5 @@
 {
-  "name": "wow-gym-api",
+  "name": "wow-gym-server",
   "version": "1.0.0",
   "description": "gym-api-server",
   "main": "index.js",
@@ -7,7 +7,7 @@
     "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "TimChen",
+  "author": "ChrisLin",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.5",
