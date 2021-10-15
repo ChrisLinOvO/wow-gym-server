@@ -69,12 +69,13 @@ app.use("/api/user", memberRoutes);
 app.use("/api/articles", articleRoutes);
 
 // home route
-// app.use((req, res, next) => res.send("Hi welcome to wow-gym API server 👻!"));
+app.use((req, res, next) => res.send("Hi welcome to wow-gym API server 👻!"));
 app.use('/',express.static('./build'));
 // Error handler
 app.use((req, res, next) => {
   throw new httpError("Route can't find!", 404);
 });
+
 
 app.use((error, req, res, next) => {
   if (res.headerSent) return next(error);
