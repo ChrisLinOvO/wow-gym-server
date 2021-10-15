@@ -68,7 +68,7 @@ app.use("/Orders", OrderRoutes);
 app.use("/api/user", memberRoutes);
 app.use("/api/articles", articleRoutes);
 
-// home route
+// home routes
 // app.use((req, res, next) => res.send("Hi welcome to wow-gym API server 👻!"));
 app.use('/',express.static('./build'));
 // Error handler
