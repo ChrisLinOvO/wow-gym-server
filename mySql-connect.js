@@ -16,18 +16,11 @@ const mysql = require("mysql2");
 
 // production config
 const pool = mysql.createPool({
-  DB_HOST: "b5ps8x6brydtzteexohi-mysql.services.clever-cloud.com",
-  DB_USER: "u2dcit2jejtu14pt",
-  DB_PASSWORD: "sq3z60coqbG8wdZFujBT",
-  DB_Name: "b5ps8x6brydtzteexohi",
+  host: "b5ps8x6brydtzteexohi-mysql.services.clever-cloud.com",
+  user: "u2dcit2jejtu14pt",
+  password: "sq3z60coqbG8wdZFujBT",
+  database: "b5ps8x6brydtzteexohi",
 });
-
-// const pool = mysql.createPool({
-//   host: "b5ps8x6brydtzteexohi-mysql.services.clever-cloud.com",
-//   user: "u2dcit2jejtu14pt",
-//   password: "sq3z60coqbG8wdZFujBT",
-//   database: "b5ps8x6brydtzteexohi",
-// });
 
 module.exports = pool.promise();
 
