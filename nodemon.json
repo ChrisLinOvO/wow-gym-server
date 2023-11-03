@@ -1,8 +1,8 @@
 {
   "env": {
-    "DB_USER": "root",
-    "DB_HOST": "localhost",
-    "DB_PASSWORD": "",
-    "DB_TABLE": "wow-gym-v2"
+    "DB_USER": "u2dcit2jejtu14pt",
+    "DB_HOST": "b5ps8x6brydtzteexohi",
+    "DB_PASSWORD": "sq3z60coqbG8wdZFujBT",
+    "DB_Name": "b5ps8x6brydtzteexohi"
   }
 }

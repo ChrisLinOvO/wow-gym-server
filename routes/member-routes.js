@@ -29,7 +29,7 @@ router.get(
   passport.authenticate("google", {
     session: true,
   }),
-  (req, res) => res.redirect("http://localhost:3000")
+  (req, res) => res.redirect("https://wow-gym.onrender.com")
 );
 
 router.get("/logout", (req, res) => {

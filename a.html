@@ -10,7 +10,7 @@
 
     <script>
 
-        fetch('http://localhost:3000/api/courses/data')
+        fetch('https://wow-gym.onrender.com/api/courses/data')
         .then(r=>r.json())
         .then(obj=>{
             info.innerHTML = JSON.stringify(obj)
